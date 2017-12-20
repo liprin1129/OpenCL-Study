@@ -1,0 +1,1223 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXFileReference section */
+		CBF7BAD71FE95F85007E3129 /* C_row_priv.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = C_row_priv.cl; sourceTree = "<group>"; };
+		CBF7BAD81FE95F85007E3129 /* C_row.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = C_row.cl; sourceTree = "<group>"; };
+		CBF7BADA1FE95F85007E3129 /* matmul.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = matmul.py; sourceTree = "<group>"; };
+		CBF7BADB1FE95F85007E3129 /* definitions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = definitions.py; sourceTree = "<group>"; };
+		CBF7BADC1FE95F85007E3129 /* helper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = helper.py; sourceTree = "<group>"; };
+		CBF7BADD1FE95F85007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BADE1FE95F85007E3129 /* C_elem.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = C_elem.cl; sourceTree = "<group>"; };
+		CBF7BADF1FE95F85007E3129 /* C_block_form.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = C_block_form.cl; sourceTree = "<group>"; };
+		CBF7BAE11FE95F85007E3129 /* matrix_lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix_lib.cpp; sourceTree = "<group>"; };
+		CBF7BAE21FE95F85007E3129 /* matmul.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matmul.cpp; sourceTree = "<group>"; };
+		CBF7BAE31FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BAE41FE95F85007E3129 /* matrix_lib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_lib.hpp; sourceTree = "<group>"; };
+		CBF7BAE51FE95F85007E3129 /* matmul.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matmul.hpp; sourceTree = "<group>"; };
+		CBF7BAE61FE95F85007E3129 /* C_row_priv_bloc.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = C_row_priv_bloc.cl; sourceTree = "<group>"; };
+		CBF7BAE81FE95F85007E3129 /* matmul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matmul.h; sourceTree = "<group>"; };
+		CBF7BAE91FE95F85007E3129 /* matrix_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix_lib.h; sourceTree = "<group>"; };
+		CBF7BAEA1FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BAEB1FE95F85007E3129 /* matmul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matmul.c; sourceTree = "<group>"; };
+		CBF7BAEC1FE95F85007E3129 /* matrix_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix_lib.c; sourceTree = "<group>"; };
+		CBF7BAEF1FE95F85007E3129 /* matmul.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = matmul.py; sourceTree = "<group>"; };
+		CBF7BAF01FE95F85007E3129 /* definitions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = definitions.py; sourceTree = "<group>"; };
+		CBF7BAF11FE95F85007E3129 /* helper.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = helper.pyc; sourceTree = "<group>"; };
+		CBF7BAF21FE95F85007E3129 /* helper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = helper.py; sourceTree = "<group>"; };
+		CBF7BAF31FE95F85007E3129 /* definitions.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = definitions.pyc; sourceTree = "<group>"; };
+		CBF7BAF41FE95F85007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BAF61FE95F85007E3129 /* matmul.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = matmul.o; sourceTree = "<group>"; };
+		CBF7BAF71FE95F85007E3129 /* wtime.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = wtime.o; sourceTree = "<group>"; };
+		CBF7BAF81FE95F85007E3129 /* matrix_lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix_lib.cpp; sourceTree = "<group>"; };
+		CBF7BAF91FE95F85007E3129 /* matrix_lib.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = matrix_lib.o; sourceTree = "<group>"; };
+		CBF7BAFA1FE95F85007E3129 /* matmul.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matmul.cpp; sourceTree = "<group>"; };
+		CBF7BAFB1FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BAFC1FE95F85007E3129 /* matrix_lib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_lib.hpp; sourceTree = "<group>"; };
+		CBF7BAFD1FE95F85007E3129 /* mult */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mult; sourceTree = "<group>"; };
+		CBF7BAFE1FE95F85007E3129 /* matmul.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matmul.hpp; sourceTree = "<group>"; };
+		CBF7BB001FE95F85007E3129 /* matmul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matmul.h; sourceTree = "<group>"; };
+		CBF7BB011FE95F85007E3129 /* matrix_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix_lib.h; sourceTree = "<group>"; };
+		CBF7BB021FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB031FE95F85007E3129 /* matmul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matmul.c; sourceTree = "<group>"; };
+		CBF7BB041FE95F85007E3129 /* matrix_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix_lib.c; sourceTree = "<group>"; };
+		CBF7BB061FE95F85007E3129 /* C_row_priv.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = C_row_priv.cl; sourceTree = "<group>"; };
+		CBF7BB071FE95F85007E3129 /* C_row.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = C_row.cl; sourceTree = "<group>"; };
+		CBF7BB091FE95F85007E3129 /* matmul.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = matmul.py; sourceTree = "<group>"; };
+		CBF7BB0A1FE95F85007E3129 /* definitions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = definitions.py; sourceTree = "<group>"; };
+		CBF7BB0B1FE95F85007E3129 /* helper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = helper.py; sourceTree = "<group>"; };
+		CBF7BB0C1FE95F85007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB0D1FE95F85007E3129 /* C_elem.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = C_elem.cl; sourceTree = "<group>"; };
+		CBF7BB0F1FE95F85007E3129 /* matrix_lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix_lib.cpp; sourceTree = "<group>"; };
+		CBF7BB101FE95F85007E3129 /* matmul.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matmul.cpp; sourceTree = "<group>"; };
+		CBF7BB111FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB121FE95F85007E3129 /* matrix_lib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_lib.hpp; sourceTree = "<group>"; };
+		CBF7BB131FE95F85007E3129 /* matmul.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matmul.hpp; sourceTree = "<group>"; };
+		CBF7BB151FE95F85007E3129 /* matmul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matmul.h; sourceTree = "<group>"; };
+		CBF7BB161FE95F85007E3129 /* matrix_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix_lib.h; sourceTree = "<group>"; };
+		CBF7BB171FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB181FE95F85007E3129 /* matmul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matmul.c; sourceTree = "<group>"; };
+		CBF7BB191FE95F85007E3129 /* matrix_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix_lib.c; sourceTree = "<group>"; };
+		CBF7BB1C1FE95F85007E3129 /* pi_ocl.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pi_ocl.py; sourceTree = "<group>"; };
+		CBF7BB1D1FE95F85007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB1F1FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB201FE95F85007E3129 /* pi_ocl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pi_ocl.cpp; sourceTree = "<group>"; };
+		CBF7BB211FE95F85007E3129 /* pi_ocl.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = pi_ocl.cl; sourceTree = "<group>"; };
+		CBF7BB231FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB241FE95F85007E3129 /* pi_ocl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pi_ocl.c; sourceTree = "<group>"; };
+		CBF7BB271FE95F85007E3129 /* gameoflife.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gameoflife.py; sourceTree = "<group>"; };
+		CBF7BB281FE95F85007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB2A1FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB2B1FE95F85007E3129 /* gameoflife.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gameoflife.cpp; sourceTree = "<group>"; };
+		CBF7BB2C1FE95F85007E3129 /* gameoflife.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = gameoflife.cl; sourceTree = "<group>"; };
+		CBF7BB2E1FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB2F1FE95F85007E3129 /* gameoflife.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gameoflife.c; sourceTree = "<group>"; };
+		CBF7BB301FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB321FE95F85007E3129 /* cl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
+		CBF7BB331FE95F85007E3129 /* wtime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wtime.c; sourceTree = "<group>"; };
+		CBF7BB341FE95F85007E3129 /* err_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err_code.h; sourceTree = "<group>"; };
+		CBF7BB351FE95F85007E3129 /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
+		CBF7BB361FE95F85007E3129 /* device_picker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = device_picker.hpp; sourceTree = "<group>"; };
+		CBF7BB391FE95F85007E3129 /* vadd_abc.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = vadd_abc.py; sourceTree = "<group>"; };
+		CBF7BB3A1FE95F85007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB3C1FE95F85007E3129 /* vadd_abc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vadd_abc.cpp; sourceTree = "<group>"; };
+		CBF7BB3D1FE95F85007E3129 /* vadd_abc.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = vadd_abc.cl; sourceTree = "<group>"; };
+		CBF7BB3E1FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB401FE95F85007E3129 /* vadd_abc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vadd_abc.c; sourceTree = "<group>"; };
+		CBF7BB411FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB441FE95F85007E3129 /* pi_vocl.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pi_vocl.py; sourceTree = "<group>"; };
+		CBF7BB451FE95F85007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB461FE95F85007E3129 /* pi_vocl.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = pi_vocl.cl; sourceTree = "<group>"; };
+		CBF7BB481FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB491FE95F85007E3129 /* pi_vocl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pi_vocl.cpp; sourceTree = "<group>"; };
+		CBF7BB4B1FE95F85007E3129 /* pi_vocl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pi_vocl.c; sourceTree = "<group>"; };
+		CBF7BB4C1FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB4F1FE95F85007E3129 /* vadd_chain.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = vadd_chain.py; sourceTree = "<group>"; };
+		CBF7BB501FE95F85007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB521FE95F85007E3129 /* vadd_chain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vadd_chain.cpp; sourceTree = "<group>"; };
+		CBF7BB531FE95F85007E3129 /* vadd_chain.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = vadd_chain.cl; sourceTree = "<group>"; };
+		CBF7BB541FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB561FE95F85007E3129 /* vadd_chain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vadd_chain.c; sourceTree = "<group>"; };
+		CBF7BB571FE95F85007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB591FE95F85007E3129 /* device_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = device_info.c; sourceTree = "<group>"; };
+		CBF7BB5A1FE95F85007E3129 /* wtime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wtime.c; sourceTree = "<group>"; };
+		CBF7BB5B1FE95F85007E3129 /* err_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err_code.h; sourceTree = "<group>"; };
+		CBF7BB5C1FE95F85007E3129 /* device_picker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = device_picker.h; sourceTree = "<group>"; };
+		CBF7BB5F1FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB621FE960CB007E3129 /* DeviceInfo.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = DeviceInfo.py; sourceTree = "<group>"; };
+		CBF7BB631FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB651FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB661FE960CB007E3129 /* DeviceInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceInfo.cpp; sourceTree = "<group>"; };
+		CBF7BB681FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB691FE960CB007E3129 /* DeviceInfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DeviceInfo.c; sourceTree = "<group>"; };
+		CBF7BB6C1FE960CB007E3129 /* matmul.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = matmul.py; sourceTree = "<group>"; };
+		CBF7BB6D1FE960CB007E3129 /* definitions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = definitions.py; sourceTree = "<group>"; };
+		CBF7BB6E1FE960CB007E3129 /* helper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = helper.py; sourceTree = "<group>"; };
+		CBF7BB6F1FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB711FE960CB007E3129 /* matrix_lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix_lib.cpp; sourceTree = "<group>"; };
+		CBF7BB721FE960CB007E3129 /* matmul.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matmul.cpp; sourceTree = "<group>"; };
+		CBF7BB731FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB741FE960CB007E3129 /* matrix_lib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_lib.hpp; sourceTree = "<group>"; };
+		CBF7BB751FE960CB007E3129 /* matmul.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matmul.hpp; sourceTree = "<group>"; };
+		CBF7BB771FE960CB007E3129 /* matmul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matmul.h; sourceTree = "<group>"; };
+		CBF7BB781FE960CB007E3129 /* matrix_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix_lib.h; sourceTree = "<group>"; };
+		CBF7BB791FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB7A1FE960CB007E3129 /* matmul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matmul.c; sourceTree = "<group>"; };
+		CBF7BB7B1FE960CB007E3129 /* matrix_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix_lib.c; sourceTree = "<group>"; };
+		CBF7BB7D1FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB801FE960CB007E3129 /* pi.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pi.py; sourceTree = "<group>"; };
+		CBF7BB811FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB831FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB841FE960CB007E3129 /* pi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pi.cpp; sourceTree = "<group>"; };
+		CBF7BB861FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB871FE960CB007E3129 /* pi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pi.c; sourceTree = "<group>"; };
+		CBF7BB8A1FE960CB007E3129 /* gameoflife.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gameoflife.cu; sourceTree = "<group>"; };
+		CBF7BB8B1FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB8D1FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BB8E1FE960CB007E3129 /* displayer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = displayer.c; sourceTree = "<group>"; };
+		CBF7BB8F1FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BB921FE960CB007E3129 /* input.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.params; sourceTree = "<group>"; };
+		CBF7BB931FE960CB007E3129 /* queenbee.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = queenbee.dat; sourceTree = "<group>"; };
+		CBF7BB941FE960CB007E3129 /* final_state.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = final_state.dat; sourceTree = "<group>"; };
+		CBF7BB961FE960CB007E3129 /* input.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.params; sourceTree = "<group>"; };
+		CBF7BB971FE960CB007E3129 /* final_state.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = final_state.dat; sourceTree = "<group>"; };
+		CBF7BB981FE960CB007E3129 /* acorn.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acorn.dat; sourceTree = "<group>"; };
+		CBF7BB9A1FE960CB007E3129 /* input.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.params; sourceTree = "<group>"; };
+		CBF7BB9B1FE960CB007E3129 /* max.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = max.dat; sourceTree = "<group>"; };
+		CBF7BB9C1FE960CB007E3129 /* final_state.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = final_state.dat; sourceTree = "<group>"; };
+		CBF7BB9E1FE960CB007E3129 /* input.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.params; sourceTree = "<group>"; };
+		CBF7BB9F1FE960CB007E3129 /* pulsar.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pulsar.dat; sourceTree = "<group>"; };
+		CBF7BBA01FE960CB007E3129 /* final_state.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = final_state.dat; sourceTree = "<group>"; };
+		CBF7BBA21FE960CB007E3129 /* vadd.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vadd.cu; sourceTree = "<group>"; };
+		CBF7BBA31FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBA51FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBA61FE960CB007E3129 /* gameoflife.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gameoflife.c; sourceTree = "<group>"; };
+		CBF7BBA71FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBA91FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BBAB1FE960CB007E3129 /* cl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
+		CBF7BBAC1FE960CB007E3129 /* wtime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wtime.c; sourceTree = "<group>"; };
+		CBF7BBAD1FE960CB007E3129 /* err_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err_code.h; sourceTree = "<group>"; };
+		CBF7BBAE1FE960CB007E3129 /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
+		CBF7BBAF1FE960CB007E3129 /* device_picker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = device_picker.hpp; sourceTree = "<group>"; };
+		CBF7BBB21FE960CB007E3129 /* deviceinfo.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = deviceinfo.py; sourceTree = "<group>"; };
+		CBF7BBB31FE960CB007E3129 /* vadd.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = vadd.py; sourceTree = "<group>"; };
+		CBF7BBB41FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BBB61FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBB71FE960CB007E3129 /* vadd.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = vadd.cl; sourceTree = "<group>"; };
+		CBF7BBB81FE960CB007E3129 /* vadd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vadd.cpp; sourceTree = "<group>"; };
+		CBF7BBBA1FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBBB1FE960CB007E3129 /* vadd_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vadd_c.c; sourceTree = "<group>"; };
+		CBF7BBBD1FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BBBF1FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBC01FE960CB007E3129 /* vadd_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vadd_c.c; sourceTree = "<group>"; };
+		CBF7BBC21FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BBC51FE960CB007E3129 /* deviceinfo.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = deviceinfo.py; sourceTree = "<group>"; };
+		CBF7BBC61FE960CB007E3129 /* vadd.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = vadd.py; sourceTree = "<group>"; };
+		CBF7BBC71FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BBC91FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBCA1FE960CB007E3129 /* vadd.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = vadd.cl; sourceTree = "<group>"; };
+		CBF7BBCB1FE960CB007E3129 /* vadd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vadd.cpp; sourceTree = "<group>"; };
+		CBF7BBCE1FE960CB007E3129 /* deviceinfo.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = deviceinfo.py; sourceTree = "<group>"; };
+		CBF7BBCF1FE960CB007E3129 /* vadd.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = vadd.py; sourceTree = "<group>"; };
+		CBF7BBD01FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BBD21FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBD31FE960CB007E3129 /* vadd.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = vadd.cl; sourceTree = "<group>"; };
+		CBF7BBD41FE960CB007E3129 /* vadd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vadd.cpp; sourceTree = "<group>"; };
+		CBF7BBD61FE960CB007E3129 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CBF7BBD71FE960CB007E3129 /* vadd_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vadd_c.c; sourceTree = "<group>"; };
+		CBF7BBD91FE960CB007E3129 /* device_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = device_info.c; sourceTree = "<group>"; };
+		CBF7BBDA1FE960CB007E3129 /* wtime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wtime.c; sourceTree = "<group>"; };
+		CBF7BBDB1FE960CB007E3129 /* err_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err_code.h; sourceTree = "<group>"; };
+		CBF7BBDC1FE960CB007E3129 /* device_picker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = device_picker.h; sourceTree = "<group>"; };
+		CBF7BBDE1FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBF7BBE01FE960CB007E3129 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		CBF7BA461FE95C8C007E3129 = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB5D1FE960CB007E3129 /* Exercises */,
+				CBF7BAD51FE95F85007E3129 /* Solutions */,
+			);
+			sourceTree = "<group>";
+		};
+		CBF7BAD51FE95F85007E3129 /* Solutions */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BAD61FE95F85007E3129 /* Exercise08 */,
+				CBF7BAED1FE95F85007E3129 /* Exercise06 */,
+				CBF7BB051FE95F85007E3129 /* Exercise07 */,
+				CBF7BB1A1FE95F85007E3129 /* Exercise09 */,
+				CBF7BB251FE95F85007E3129 /* Exercise13 */,
+				CBF7BB301FE95F85007E3129 /* Makefile */,
+				CBF7BB311FE95F85007E3129 /* Cpp_common */,
+				CBF7BB371FE95F85007E3129 /* Exercise05 */,
+				CBF7BB421FE95F85007E3129 /* ExerciseA */,
+				CBF7BB4D1FE95F85007E3129 /* Exercise04 */,
+				CBF7BB581FE95F85007E3129 /* C_common */,
+			);
+			path = Solutions;
+			sourceTree = "<group>";
+		};
+		CBF7BAD61FE95F85007E3129 /* Exercise08 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BAD71FE95F85007E3129 /* C_row_priv.cl */,
+				CBF7BAD81FE95F85007E3129 /* C_row.cl */,
+				CBF7BAD91FE95F85007E3129 /* Python */,
+				CBF7BADD1FE95F85007E3129 /* README.md */,
+				CBF7BADE1FE95F85007E3129 /* C_elem.cl */,
+				CBF7BADF1FE95F85007E3129 /* C_block_form.cl */,
+				CBF7BAE01FE95F85007E3129 /* Cpp */,
+				CBF7BAE61FE95F85007E3129 /* C_row_priv_bloc.cl */,
+				CBF7BAE71FE95F85007E3129 /* C */,
+			);
+			path = Exercise08;
+			sourceTree = "<group>";
+		};
+		CBF7BAD91FE95F85007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BADA1FE95F85007E3129 /* matmul.py */,
+				CBF7BADB1FE95F85007E3129 /* definitions.py */,
+				CBF7BADC1FE95F85007E3129 /* helper.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BAE01FE95F85007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BAE11FE95F85007E3129 /* matrix_lib.cpp */,
+				CBF7BAE21FE95F85007E3129 /* matmul.cpp */,
+				CBF7BAE31FE95F85007E3129 /* Makefile */,
+				CBF7BAE41FE95F85007E3129 /* matrix_lib.hpp */,
+				CBF7BAE51FE95F85007E3129 /* matmul.hpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BAE71FE95F85007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BAE81FE95F85007E3129 /* matmul.h */,
+				CBF7BAE91FE95F85007E3129 /* matrix_lib.h */,
+				CBF7BAEA1FE95F85007E3129 /* Makefile */,
+				CBF7BAEB1FE95F85007E3129 /* matmul.c */,
+				CBF7BAEC1FE95F85007E3129 /* matrix_lib.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BAED1FE95F85007E3129 /* Exercise06 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BAEE1FE95F85007E3129 /* Python */,
+				CBF7BAF41FE95F85007E3129 /* README.md */,
+				CBF7BAF51FE95F85007E3129 /* Cpp */,
+				CBF7BAFF1FE95F85007E3129 /* C */,
+			);
+			path = Exercise06;
+			sourceTree = "<group>";
+		};
+		CBF7BAEE1FE95F85007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BAEF1FE95F85007E3129 /* matmul.py */,
+				CBF7BAF01FE95F85007E3129 /* definitions.py */,
+				CBF7BAF11FE95F85007E3129 /* helper.pyc */,
+				CBF7BAF21FE95F85007E3129 /* helper.py */,
+				CBF7BAF31FE95F85007E3129 /* definitions.pyc */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BAF51FE95F85007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BAF61FE95F85007E3129 /* matmul.o */,
+				CBF7BAF71FE95F85007E3129 /* wtime.o */,
+				CBF7BAF81FE95F85007E3129 /* matrix_lib.cpp */,
+				CBF7BAF91FE95F85007E3129 /* matrix_lib.o */,
+				CBF7BAFA1FE95F85007E3129 /* matmul.cpp */,
+				CBF7BAFB1FE95F85007E3129 /* Makefile */,
+				CBF7BAFC1FE95F85007E3129 /* matrix_lib.hpp */,
+				CBF7BAFD1FE95F85007E3129 /* mult */,
+				CBF7BAFE1FE95F85007E3129 /* matmul.hpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BAFF1FE95F85007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB001FE95F85007E3129 /* matmul.h */,
+				CBF7BB011FE95F85007E3129 /* matrix_lib.h */,
+				CBF7BB021FE95F85007E3129 /* Makefile */,
+				CBF7BB031FE95F85007E3129 /* matmul.c */,
+				CBF7BB041FE95F85007E3129 /* matrix_lib.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB051FE95F85007E3129 /* Exercise07 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB061FE95F85007E3129 /* C_row_priv.cl */,
+				CBF7BB071FE95F85007E3129 /* C_row.cl */,
+				CBF7BB081FE95F85007E3129 /* Python */,
+				CBF7BB0C1FE95F85007E3129 /* README.md */,
+				CBF7BB0D1FE95F85007E3129 /* C_elem.cl */,
+				CBF7BB0E1FE95F85007E3129 /* Cpp */,
+				CBF7BB141FE95F85007E3129 /* C */,
+			);
+			path = Exercise07;
+			sourceTree = "<group>";
+		};
+		CBF7BB081FE95F85007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB091FE95F85007E3129 /* matmul.py */,
+				CBF7BB0A1FE95F85007E3129 /* definitions.py */,
+				CBF7BB0B1FE95F85007E3129 /* helper.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB0E1FE95F85007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB0F1FE95F85007E3129 /* matrix_lib.cpp */,
+				CBF7BB101FE95F85007E3129 /* matmul.cpp */,
+				CBF7BB111FE95F85007E3129 /* Makefile */,
+				CBF7BB121FE95F85007E3129 /* matrix_lib.hpp */,
+				CBF7BB131FE95F85007E3129 /* matmul.hpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB141FE95F85007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB151FE95F85007E3129 /* matmul.h */,
+				CBF7BB161FE95F85007E3129 /* matrix_lib.h */,
+				CBF7BB171FE95F85007E3129 /* Makefile */,
+				CBF7BB181FE95F85007E3129 /* matmul.c */,
+				CBF7BB191FE95F85007E3129 /* matrix_lib.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB1A1FE95F85007E3129 /* Exercise09 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB1B1FE95F85007E3129 /* Python */,
+				CBF7BB1D1FE95F85007E3129 /* README.md */,
+				CBF7BB1E1FE95F85007E3129 /* Cpp */,
+				CBF7BB211FE95F85007E3129 /* pi_ocl.cl */,
+				CBF7BB221FE95F85007E3129 /* C */,
+			);
+			path = Exercise09;
+			sourceTree = "<group>";
+		};
+		CBF7BB1B1FE95F85007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB1C1FE95F85007E3129 /* pi_ocl.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB1E1FE95F85007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB1F1FE95F85007E3129 /* Makefile */,
+				CBF7BB201FE95F85007E3129 /* pi_ocl.cpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB221FE95F85007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB231FE95F85007E3129 /* Makefile */,
+				CBF7BB241FE95F85007E3129 /* pi_ocl.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB251FE95F85007E3129 /* Exercise13 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB261FE95F85007E3129 /* Python */,
+				CBF7BB281FE95F85007E3129 /* README.md */,
+				CBF7BB291FE95F85007E3129 /* Cpp */,
+				CBF7BB2C1FE95F85007E3129 /* gameoflife.cl */,
+				CBF7BB2D1FE95F85007E3129 /* C */,
+			);
+			path = Exercise13;
+			sourceTree = "<group>";
+		};
+		CBF7BB261FE95F85007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB271FE95F85007E3129 /* gameoflife.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB291FE95F85007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB2A1FE95F85007E3129 /* Makefile */,
+				CBF7BB2B1FE95F85007E3129 /* gameoflife.cpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB2D1FE95F85007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB2E1FE95F85007E3129 /* Makefile */,
+				CBF7BB2F1FE95F85007E3129 /* gameoflife.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB311FE95F85007E3129 /* Cpp_common */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB321FE95F85007E3129 /* cl.hpp */,
+				CBF7BB331FE95F85007E3129 /* wtime.c */,
+				CBF7BB341FE95F85007E3129 /* err_code.h */,
+				CBF7BB351FE95F85007E3129 /* util.hpp */,
+				CBF7BB361FE95F85007E3129 /* device_picker.hpp */,
+			);
+			path = Cpp_common;
+			sourceTree = "<group>";
+		};
+		CBF7BB371FE95F85007E3129 /* Exercise05 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB381FE95F85007E3129 /* Python */,
+				CBF7BB3A1FE95F85007E3129 /* README.md */,
+				CBF7BB3B1FE95F85007E3129 /* Cpp */,
+				CBF7BB3F1FE95F85007E3129 /* C */,
+			);
+			path = Exercise05;
+			sourceTree = "<group>";
+		};
+		CBF7BB381FE95F85007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB391FE95F85007E3129 /* vadd_abc.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB3B1FE95F85007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB3C1FE95F85007E3129 /* vadd_abc.cpp */,
+				CBF7BB3D1FE95F85007E3129 /* vadd_abc.cl */,
+				CBF7BB3E1FE95F85007E3129 /* Makefile */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB3F1FE95F85007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB401FE95F85007E3129 /* vadd_abc.c */,
+				CBF7BB411FE95F85007E3129 /* Makefile */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB421FE95F85007E3129 /* ExerciseA */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB431FE95F85007E3129 /* Python */,
+				CBF7BB451FE95F85007E3129 /* README.md */,
+				CBF7BB461FE95F85007E3129 /* pi_vocl.cl */,
+				CBF7BB471FE95F85007E3129 /* Cpp */,
+				CBF7BB4A1FE95F85007E3129 /* C */,
+			);
+			path = ExerciseA;
+			sourceTree = "<group>";
+		};
+		CBF7BB431FE95F85007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB441FE95F85007E3129 /* pi_vocl.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB471FE95F85007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB481FE95F85007E3129 /* Makefile */,
+				CBF7BB491FE95F85007E3129 /* pi_vocl.cpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB4A1FE95F85007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB4B1FE95F85007E3129 /* pi_vocl.c */,
+				CBF7BB4C1FE95F85007E3129 /* Makefile */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB4D1FE95F85007E3129 /* Exercise04 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB4E1FE95F85007E3129 /* Python */,
+				CBF7BB501FE95F85007E3129 /* README.md */,
+				CBF7BB511FE95F85007E3129 /* Cpp */,
+				CBF7BB551FE95F85007E3129 /* C */,
+			);
+			path = Exercise04;
+			sourceTree = "<group>";
+		};
+		CBF7BB4E1FE95F85007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB4F1FE95F85007E3129 /* vadd_chain.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB511FE95F85007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB521FE95F85007E3129 /* vadd_chain.cpp */,
+				CBF7BB531FE95F85007E3129 /* vadd_chain.cl */,
+				CBF7BB541FE95F85007E3129 /* Makefile */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB551FE95F85007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB561FE95F85007E3129 /* vadd_chain.c */,
+				CBF7BB571FE95F85007E3129 /* Makefile */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB581FE95F85007E3129 /* C_common */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB591FE95F85007E3129 /* device_info.c */,
+				CBF7BB5A1FE95F85007E3129 /* wtime.c */,
+				CBF7BB5B1FE95F85007E3129 /* err_code.h */,
+				CBF7BB5C1FE95F85007E3129 /* device_picker.h */,
+			);
+			path = C_common;
+			sourceTree = "<group>";
+		};
+		CBF7BB5D1FE960CB007E3129 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB5E1FE960CB007E3129 /* Exercise08 */,
+				CBF7BB601FE960CB007E3129 /* Exercise01 */,
+				CBF7BB6A1FE960CB007E3129 /* Exercise06 */,
+				CBF7BB7C1FE960CB007E3129 /* Exercise07 */,
+				CBF7BB7E1FE960CB007E3129 /* Exercise09 */,
+				CBF7BB881FE960CB007E3129 /* Exercise13 */,
+				CBF7BBA71FE960CB007E3129 /* Makefile */,
+				CBF7BBA81FE960CB007E3129 /* Exercise12 */,
+				CBF7BBAA1FE960CB007E3129 /* Cpp_common */,
+				CBF7BBB01FE960CB007E3129 /* Exercise05 */,
+				CBF7BBBC1FE960CB007E3129 /* Exercise02 */,
+				CBF7BBC11FE960CB007E3129 /* ExerciseA */,
+				CBF7BBC31FE960CB007E3129 /* Exercise03 */,
+				CBF7BBCC1FE960CB007E3129 /* Exercise04 */,
+				CBF7BBD81FE960CB007E3129 /* C_common */,
+				CBF7BBDD1FE960CB007E3129 /* Exercise10 */,
+				CBF7BBDF1FE960CB007E3129 /* Exercise11 */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		CBF7BB5E1FE960CB007E3129 /* Exercise08 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB5F1FE960CB007E3129 /* README.md */,
+			);
+			path = Exercise08;
+			sourceTree = "<group>";
+		};
+		CBF7BB601FE960CB007E3129 /* Exercise01 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB611FE960CB007E3129 /* Python */,
+				CBF7BB631FE960CB007E3129 /* README.md */,
+				CBF7BB641FE960CB007E3129 /* Cpp */,
+				CBF7BB671FE960CB007E3129 /* C */,
+			);
+			path = Exercise01;
+			sourceTree = "<group>";
+		};
+		CBF7BB611FE960CB007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB621FE960CB007E3129 /* DeviceInfo.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB641FE960CB007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB651FE960CB007E3129 /* Makefile */,
+				CBF7BB661FE960CB007E3129 /* DeviceInfo.cpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB671FE960CB007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB681FE960CB007E3129 /* Makefile */,
+				CBF7BB691FE960CB007E3129 /* DeviceInfo.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB6A1FE960CB007E3129 /* Exercise06 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB6B1FE960CB007E3129 /* Python */,
+				CBF7BB6F1FE960CB007E3129 /* README.md */,
+				CBF7BB701FE960CB007E3129 /* Cpp */,
+				CBF7BB761FE960CB007E3129 /* C */,
+			);
+			path = Exercise06;
+			sourceTree = "<group>";
+		};
+		CBF7BB6B1FE960CB007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB6C1FE960CB007E3129 /* matmul.py */,
+				CBF7BB6D1FE960CB007E3129 /* definitions.py */,
+				CBF7BB6E1FE960CB007E3129 /* helper.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB701FE960CB007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB711FE960CB007E3129 /* matrix_lib.cpp */,
+				CBF7BB721FE960CB007E3129 /* matmul.cpp */,
+				CBF7BB731FE960CB007E3129 /* Makefile */,
+				CBF7BB741FE960CB007E3129 /* matrix_lib.hpp */,
+				CBF7BB751FE960CB007E3129 /* matmul.hpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB761FE960CB007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB771FE960CB007E3129 /* matmul.h */,
+				CBF7BB781FE960CB007E3129 /* matrix_lib.h */,
+				CBF7BB791FE960CB007E3129 /* Makefile */,
+				CBF7BB7A1FE960CB007E3129 /* matmul.c */,
+				CBF7BB7B1FE960CB007E3129 /* matrix_lib.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB7C1FE960CB007E3129 /* Exercise07 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB7D1FE960CB007E3129 /* README.md */,
+			);
+			path = Exercise07;
+			sourceTree = "<group>";
+		};
+		CBF7BB7E1FE960CB007E3129 /* Exercise09 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB7F1FE960CB007E3129 /* Python */,
+				CBF7BB811FE960CB007E3129 /* README.md */,
+				CBF7BB821FE960CB007E3129 /* Cpp */,
+				CBF7BB851FE960CB007E3129 /* C */,
+			);
+			path = Exercise09;
+			sourceTree = "<group>";
+		};
+		CBF7BB7F1FE960CB007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB801FE960CB007E3129 /* pi.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BB821FE960CB007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB831FE960CB007E3129 /* Makefile */,
+				CBF7BB841FE960CB007E3129 /* pi.cpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BB851FE960CB007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB861FE960CB007E3129 /* Makefile */,
+				CBF7BB871FE960CB007E3129 /* pi.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BB881FE960CB007E3129 /* Exercise13 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB891FE960CB007E3129 /* CUDA */,
+				CBF7BB8C1FE960CB007E3129 /* Displayer */,
+				CBF7BB8F1FE960CB007E3129 /* README.md */,
+				CBF7BB901FE960CB007E3129 /* Examples */,
+				CBF7BBA11FE960CB007E3129 /* CUDA-VADD */,
+				CBF7BBA41FE960CB007E3129 /* C */,
+			);
+			path = Exercise13;
+			sourceTree = "<group>";
+		};
+		CBF7BB891FE960CB007E3129 /* CUDA */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB8A1FE960CB007E3129 /* gameoflife.cu */,
+				CBF7BB8B1FE960CB007E3129 /* Makefile */,
+			);
+			path = CUDA;
+			sourceTree = "<group>";
+		};
+		CBF7BB8C1FE960CB007E3129 /* Displayer */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB8D1FE960CB007E3129 /* Makefile */,
+				CBF7BB8E1FE960CB007E3129 /* displayer.c */,
+			);
+			path = Displayer;
+			sourceTree = "<group>";
+		};
+		CBF7BB901FE960CB007E3129 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB911FE960CB007E3129 /* QueenBee */,
+				CBF7BB951FE960CB007E3129 /* Acorn */,
+				CBF7BB991FE960CB007E3129 /* Max */,
+				CBF7BB9D1FE960CB007E3129 /* Pulsar */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		CBF7BB911FE960CB007E3129 /* QueenBee */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB921FE960CB007E3129 /* input.params */,
+				CBF7BB931FE960CB007E3129 /* queenbee.dat */,
+				CBF7BB941FE960CB007E3129 /* final_state.dat */,
+			);
+			path = QueenBee;
+			sourceTree = "<group>";
+		};
+		CBF7BB951FE960CB007E3129 /* Acorn */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB961FE960CB007E3129 /* input.params */,
+				CBF7BB971FE960CB007E3129 /* final_state.dat */,
+				CBF7BB981FE960CB007E3129 /* acorn.dat */,
+			);
+			path = Acorn;
+			sourceTree = "<group>";
+		};
+		CBF7BB991FE960CB007E3129 /* Max */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB9A1FE960CB007E3129 /* input.params */,
+				CBF7BB9B1FE960CB007E3129 /* max.dat */,
+				CBF7BB9C1FE960CB007E3129 /* final_state.dat */,
+			);
+			path = Max;
+			sourceTree = "<group>";
+		};
+		CBF7BB9D1FE960CB007E3129 /* Pulsar */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BB9E1FE960CB007E3129 /* input.params */,
+				CBF7BB9F1FE960CB007E3129 /* pulsar.dat */,
+				CBF7BBA01FE960CB007E3129 /* final_state.dat */,
+			);
+			path = Pulsar;
+			sourceTree = "<group>";
+		};
+		CBF7BBA11FE960CB007E3129 /* CUDA-VADD */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBA21FE960CB007E3129 /* vadd.cu */,
+				CBF7BBA31FE960CB007E3129 /* Makefile */,
+			);
+			path = "CUDA-VADD";
+			sourceTree = "<group>";
+		};
+		CBF7BBA41FE960CB007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBA51FE960CB007E3129 /* Makefile */,
+				CBF7BBA61FE960CB007E3129 /* gameoflife.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BBA81FE960CB007E3129 /* Exercise12 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBA91FE960CB007E3129 /* README.md */,
+			);
+			path = Exercise12;
+			sourceTree = "<group>";
+		};
+		CBF7BBAA1FE960CB007E3129 /* Cpp_common */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBAB1FE960CB007E3129 /* cl.hpp */,
+				CBF7BBAC1FE960CB007E3129 /* wtime.c */,
+				CBF7BBAD1FE960CB007E3129 /* err_code.h */,
+				CBF7BBAE1FE960CB007E3129 /* util.hpp */,
+				CBF7BBAF1FE960CB007E3129 /* device_picker.hpp */,
+			);
+			path = Cpp_common;
+			sourceTree = "<group>";
+		};
+		CBF7BBB01FE960CB007E3129 /* Exercise05 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBB11FE960CB007E3129 /* Python */,
+				CBF7BBB41FE960CB007E3129 /* README.md */,
+				CBF7BBB51FE960CB007E3129 /* Cpp */,
+				CBF7BBB91FE960CB007E3129 /* C */,
+			);
+			path = Exercise05;
+			sourceTree = "<group>";
+		};
+		CBF7BBB11FE960CB007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBB21FE960CB007E3129 /* deviceinfo.py */,
+				CBF7BBB31FE960CB007E3129 /* vadd.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BBB51FE960CB007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBB61FE960CB007E3129 /* Makefile */,
+				CBF7BBB71FE960CB007E3129 /* vadd.cl */,
+				CBF7BBB81FE960CB007E3129 /* vadd.cpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BBB91FE960CB007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBBA1FE960CB007E3129 /* Makefile */,
+				CBF7BBBB1FE960CB007E3129 /* vadd_c.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BBBC1FE960CB007E3129 /* Exercise02 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBBD1FE960CB007E3129 /* README.md */,
+				CBF7BBBE1FE960CB007E3129 /* C */,
+			);
+			path = Exercise02;
+			sourceTree = "<group>";
+		};
+		CBF7BBBE1FE960CB007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBBF1FE960CB007E3129 /* Makefile */,
+				CBF7BBC01FE960CB007E3129 /* vadd_c.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BBC11FE960CB007E3129 /* ExerciseA */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBC21FE960CB007E3129 /* README.md */,
+			);
+			path = ExerciseA;
+			sourceTree = "<group>";
+		};
+		CBF7BBC31FE960CB007E3129 /* Exercise03 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBC41FE960CB007E3129 /* Python */,
+				CBF7BBC71FE960CB007E3129 /* README.md */,
+				CBF7BBC81FE960CB007E3129 /* Cpp */,
+			);
+			path = Exercise03;
+			sourceTree = "<group>";
+		};
+		CBF7BBC41FE960CB007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBC51FE960CB007E3129 /* deviceinfo.py */,
+				CBF7BBC61FE960CB007E3129 /* vadd.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BBC81FE960CB007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBC91FE960CB007E3129 /* Makefile */,
+				CBF7BBCA1FE960CB007E3129 /* vadd.cl */,
+				CBF7BBCB1FE960CB007E3129 /* vadd.cpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BBCC1FE960CB007E3129 /* Exercise04 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBCD1FE960CB007E3129 /* Python */,
+				CBF7BBD01FE960CB007E3129 /* README.md */,
+				CBF7BBD11FE960CB007E3129 /* Cpp */,
+				CBF7BBD51FE960CB007E3129 /* C */,
+			);
+			path = Exercise04;
+			sourceTree = "<group>";
+		};
+		CBF7BBCD1FE960CB007E3129 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBCE1FE960CB007E3129 /* deviceinfo.py */,
+				CBF7BBCF1FE960CB007E3129 /* vadd.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		CBF7BBD11FE960CB007E3129 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBD21FE960CB007E3129 /* Makefile */,
+				CBF7BBD31FE960CB007E3129 /* vadd.cl */,
+				CBF7BBD41FE960CB007E3129 /* vadd.cpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		CBF7BBD51FE960CB007E3129 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBD61FE960CB007E3129 /* Makefile */,
+				CBF7BBD71FE960CB007E3129 /* vadd_c.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CBF7BBD81FE960CB007E3129 /* C_common */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBD91FE960CB007E3129 /* device_info.c */,
+				CBF7BBDA1FE960CB007E3129 /* wtime.c */,
+				CBF7BBDB1FE960CB007E3129 /* err_code.h */,
+				CBF7BBDC1FE960CB007E3129 /* device_picker.h */,
+			);
+			path = C_common;
+			sourceTree = "<group>";
+		};
+		CBF7BBDD1FE960CB007E3129 /* Exercise10 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBDE1FE960CB007E3129 /* README.md */,
+			);
+			path = Exercise10;
+			sourceTree = "<group>";
+		};
+		CBF7BBDF1FE960CB007E3129 /* Exercise11 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7BBE01FE960CB007E3129 /* README.md */,
+			);
+			path = Exercise11;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		CBF7BA4B1FE95C8C007E3129 /* OpenCL */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = CBF7BA4E1FE95C8C007E3129 /* Build configuration list for PBXLegacyTarget "OpenCL" */;
+			buildPhases = (
+			);
+			buildToolPath = /Users/pure/Private_Local_Data/PythonEnvs/2.7PythonEnv/bin/python2.7;
+			dependencies = (
+			);
+			name = OpenCL;
+			passBuildSettingsInEnvironment = 1;
+			productName = OpenCL;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		CBF7BA471FE95C8C007E3129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "SeongMuk Gang";
+				TargetAttributes = {
+					CBF7BA4B1FE95C8C007E3129 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CBF7BA4A1FE95C8C007E3129 /* Build configuration list for PBXProject "OpenCL" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CBF7BA461FE95C8C007E3129;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBF7BA4B1FE95C8C007E3129 /* OpenCL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		CBF7BA4C1FE95C8C007E3129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		CBF7BA4D1FE95C8C007E3129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		CBF7BA4F1FE95C8C007E3129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBF7BA501FE95C8C007E3129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBF7BA4A1FE95C8C007E3129 /* Build configuration list for PBXProject "OpenCL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF7BA4C1FE95C8C007E3129 /* Debug */,
+				CBF7BA4D1FE95C8C007E3129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF7BA4E1FE95C8C007E3129 /* Build configuration list for PBXLegacyTarget "OpenCL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF7BA4F1FE95C8C007E3129 /* Debug */,
+				CBF7BA501FE95C8C007E3129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBF7BA471FE95C8C007E3129 /* Project object */;
+}
