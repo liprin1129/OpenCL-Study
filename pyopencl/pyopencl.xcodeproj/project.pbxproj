@@ -7,68 +7,72 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		CBB17FCF1FEEA94D0093755E /* Exercises */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Exercises; path = "../Exercises-Solutions-master/Exercises"; sourceTree = "<group>"; };
-		CBB17FD01FEEA94D0093755E /* Solutions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Solutions; path = "../Exercises-Solutions-master/Solutions"; sourceTree = "<group>"; };
+		CB2696811FED23E00080A681 /* matrix_multiplication_divide.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = matrix_multiplication_divide.py; path = ../matrix_multiplication_divide.py; sourceTree = "<group>"; };
+		CB2696821FED23E00080A681 /* numpy_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = numpy_test.py; path = ../numpy_test.py; sourceTree = "<group>"; };
+		CB2696831FED23E00080A681 /* matrix_multiplication.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = matrix_multiplication.py; path = ../matrix_multiplication.py; sourceTree = "<group>"; };
+		CB2696841FED2B0F0080A681 /* matrix_dot.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = matrix_dot.py; path = ../matrix_dot.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		CBF7BA461FE95C8C007E3129 = {
+		CB26966C1FED21FE0080A681 = {
 			isa = PBXGroup;
 			children = (
-				CBB17FCF1FEEA94D0093755E /* Exercises */,
-				CBB17FD01FEEA94D0093755E /* Solutions */,
+				CB2696811FED23E00080A681 /* matrix_multiplication_divide.py */,
+				CB2696831FED23E00080A681 /* matrix_multiplication.py */,
+				CB2696821FED23E00080A681 /* numpy_test.py */,
+				CB2696841FED2B0F0080A681 /* matrix_dot.py */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		CBF7BA4B1FE95C8C007E3129 /* OpenCL */ = {
+		CB2696711FED21FE0080A681 /* pyopencl */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = CBF7BA4E1FE95C8C007E3129 /* Build configuration list for PBXLegacyTarget "OpenCL" */;
+			buildConfigurationList = CB2696741FED21FE0080A681 /* Build configuration list for PBXLegacyTarget "pyopencl" */;
 			buildPhases = (
 			);
 			buildToolPath = /Users/pure/Private_Local_Data/PythonEnvs/2.7PythonEnv/bin/python2.7;
 			dependencies = (
 			);
-			name = OpenCL;
+			name = pyopencl;
 			passBuildSettingsInEnvironment = 1;
-			productName = OpenCL;
+			productName = pyopencl;
 		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXProject section */
-		CBF7BA471FE95C8C007E3129 /* Project object */ = {
+		CB26966D1FED21FE0080A681 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "SeongMuk Gang";
 				TargetAttributes = {
-					CBF7BA4B1FE95C8C007E3129 = {
+					CB2696711FED21FE0080A681 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CBF7BA4A1FE95C8C007E3129 /* Build configuration list for PBXProject "OpenCL" */;
+			buildConfigurationList = CB2696701FED21FE0080A681 /* Build configuration list for PBXProject "pyopencl" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CBF7BA461FE95C8C007E3129;
+			mainGroup = CB26966C1FED21FE0080A681;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBF7BA4B1FE95C8C007E3129 /* OpenCL */,
+				CB2696711FED21FE0080A681 /* pyopencl */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		CBF7BA4C1FE95C8C007E3129 /* Debug */ = {
+		CB2696721FED21FE0080A681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -120,7 +124,7 @@
 			};
 			name = Debug;
 		};
-		CBF7BA4D1FE95C8C007E3129 /* Release */ = {
+		CB2696731FED21FE0080A681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -165,7 +169,7 @@
 			};
 			name = Release;
 		};
-		CBF7BA4F1FE95C8C007E3129 /* Debug */ = {
+		CB2696751FED21FE0080A681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -179,7 +183,7 @@
 			};
 			name = Debug;
 		};
-		CBF7BA501FE95C8C007E3129 /* Release */ = {
+		CB2696761FED21FE0080A681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -193,25 +197,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBF7BA4A1FE95C8C007E3129 /* Build configuration list for PBXProject "OpenCL" */ = {
+		CB2696701FED21FE0080A681 /* Build configuration list for PBXProject "pyopencl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBF7BA4C1FE95C8C007E3129 /* Debug */,
-				CBF7BA4D1FE95C8C007E3129 /* Release */,
+				CB2696721FED21FE0080A681 /* Debug */,
+				CB2696731FED21FE0080A681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBF7BA4E1FE95C8C007E3129 /* Build configuration list for PBXLegacyTarget "OpenCL" */ = {
+		CB2696741FED21FE0080A681 /* Build configuration list for PBXLegacyTarget "pyopencl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBF7BA4F1FE95C8C007E3129 /* Debug */,
-				CBF7BA501FE95C8C007E3129 /* Release */,
+				CB2696751FED21FE0080A681 /* Debug */,
+				CB2696761FED21FE0080A681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CBF7BA471FE95C8C007E3129 /* Project object */;
+	rootObject = CB26966D1FED21FE0080A681 /* Project object */;
 }
