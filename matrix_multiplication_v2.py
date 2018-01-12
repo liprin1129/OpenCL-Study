@@ -6,31 +6,32 @@ from time import time
 # Version 1
 c_dot_product_kernel = '''
 __kernel void dotProduct(
-    const int rowA,
-    const int rowB,
-    const int comDim,
-    __global float* inputA,
-    __global float* inputB,
-    __global float* outputC) {
-        int g_col = get_global_id(0);
-        int g_row = get_global_id(1);
-
-        double sum=0.0f;
-
-        for (int k = 0; k < comDim; k++) {
-            sum += inputA[g_row * rowA + k] * inputB[k * rowB + g_col];
+const int N,
+__global float *A,
+__global float *B,
+__global float *C)
+{
+    int j, k;
+    int i = get_global_id(0);
+    float tmp;
+    for (int p = 0; p < 10; p++) {
+        for (j = 0; j < N; j++) {
+            tmp = 0.0f;
+            for (k = 0; k < N; k++) {
+                tmp += A[i*N+k]*B[k*N+j];
+                }
+        C[i*N+j] = tmp;
         }
-        outputC[g_row * rowA + g_col] = sum;
     }
+}
 '''
 
-row_A_size = 1024
-row_B_size = 1024
-row_C_size = 1024
+row_size = 1024
+col_size = 1024
 
-mat_a = np.random.randn(row_A_size* row_A_size)
-mat_b = np.random.randn(row_B_size* row_B_size)
-mat_c = np.empty(row_C_size* row_C_size)
+mat_a = np.random.randn(row_size* col_size)
+mat_b = np.random.randn(row_size* col_size)
+mat_c = np.empty(row_size* col_size)
 
 mat_a = mat_a.astype(np.float32)
 mat_b = mat_b.astype(np.float32)
@@ -39,8 +40,10 @@ mat_c = mat_c.astype(np.float32)
 # #############
 # Set up OpenCL
 # #############
-
-context = cl.create_some_context()
+platform = cl.get_platforms()
+my_gpu_devices = [platform[0].get_devices(device_type=cl.device_type.GPU)[0]]
+context = cl.Context(devices=my_gpu_devices)
+#context = cl.create_some_context()
 queue = cl.CommandQueue(context)
 
 # Create Opencl Buffers
@@ -51,13 +54,15 @@ buffer_c = cl.Buffer(context, cl.mem_flags.WRITE_ONLY, mat_c.nbytes)
 # Program
 start_time = time()
 
-row_A_size = np.int32(row_A_size)
-row_B_size = np.int32(row_B_size)
-row_C_size = np.int32(row_C_size)
+widthA = row_size
+widthA = np.int32(widthA)
+
+widthB = row_size
+widthB = np.int32(widthB)
 
 program = cl.Program(context, c_dot_product_kernel).build()
-program.dotProduct.set_scalar_arg_dtypes([np.int32, np.int32, np.int32, None, None, None])
-program.dotProduct(queue, [1024, 1024], None, row_A_size, row_B_size, row_C_size, buffer_a, buffer_b, buffer_c)
+program.dotProduct.set_scalar_arg_dtypes([np.int32, None, None, None])
+program.dotProduct(queue, [1024], [1024/16], widthA, buffer_a, buffer_b, buffer_c)
 
 queue.finish()
 

@@ -16,8 +16,10 @@ __kernel void dotProduct(
 
         double sum=0.0f;
         
+        for (int p = 0; p < 100; p++) {
         for (int i = 0; i < widthA; i++) {
             sum += inputA[row * widthA + i] * inputB[i * widthB + col];
+        }
         }
         outputC[row * widthB + col] = sum;
     }
@@ -37,8 +39,10 @@ mat_c = mat_c.astype(np.float32)
 # #############
 # Set up OpenCL
 # #############
-
-context = cl.create_some_context()
+platform = cl.get_platforms()
+my_gpu_devices = [platform[0].get_devices(device_type=cl.device_type.GPU)[0]]
+context = cl.Context(devices=my_gpu_devices)
+#context = cl.create_some_context()
 queue = cl.CommandQueue(context)
 
 # Create Opencl Buffers

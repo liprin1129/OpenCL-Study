@@ -6,50 +6,39 @@ from time import time
 # Version 1
 c_dot_product_kernel = '''
 __kernel void dotProduct(
-    const int rowA,
-    const int comDim,
-    __global float* inputA,
-    __global float* inputB,
-    __global float* outputC) {
-        int g_row = get_global_id(0);
-        int g_col = get_global_id(1);
-
-        float output = 0.0f;
-        int count = 0;
-        for (int k = 0; k < comDim; k++){
-            //output += inputA[k*rowA + g_row] * inputB[g_col*comDim + k];
-            //printf("%f, ", inputA[k*rowA + g_row]);
-            //printf("%f, ", inputB[k*comDim + g_col]);
-            //printf("%d, ", k*rowA + g_row);
-            count += 1;
-            printf("%d, ", k);
-        }
-        outputC[g_col * rowA + g_row] += output;
+const int N,
+__global float *A,
+__global float *B,
+__global float *C)
+{
+    int j, k;
+    int i = get_global_id(0);
+    float tmp;
+    float Awrk[1024];
+    
+ 
+    for (k = 0; k < N; k++) {
+        Awrk[k] = A[i*N+k];
     }
+    
+    for (int p = 0; p < 100; p++) {
+        for (j = 0; j < N; j++) {
+            tmp = 0.0f;
+            for (k = 0; k < N; k++) {
+                tmp += Awrk[k]*B[k*N+j];
+                }
+        C[i*N+j] = tmp;
+        }
+    }
+}
 '''
 
-row_A_size = 3
-col_A_size = 3
+row_size = 1024
+col_size = 1024
 
-row_B_size = 3
-col_B_size = 2
-
-row_C_size = row_A_size
-col_C_size = col_B_size
-'''
-mat_a = np.random.randn(row_A_size* col_A_size)
-mat_b = np.random.randn(row_B_size* col_B_size)
-mat_c = np.empty(row_C_size* col_C_size)
-'''
-
-mat_a = np.array([[1, 2, 3], [1, 2, 3], [1, 2, 3]]) #np.ones([row_A_size, col_A_size])
-mat_a = mat_a.reshape(1, -1)
-mat_b = np.array([[2, 2, 2, 2], [3, 3, 3, 3], [4, 4, 4, 4]])
-mat_b = mat_b.reshape(1, -1)
-mat_c = np.zeros(row_C_size * col_C_size)
-
-print mat_a
-print mat_b
+mat_a = np.random.randn(row_size* col_size)
+mat_b = np.random.randn(row_size* col_size)
+mat_c = np.empty(row_size* col_size)
 
 mat_a = mat_a.astype(np.float32)
 mat_b = mat_b.astype(np.float32)
@@ -58,8 +47,10 @@ mat_c = mat_c.astype(np.float32)
 # #############
 # Set up OpenCL
 # #############
-
-context = cl.create_some_context()
+platform = cl.get_platforms()
+my_gpu_devices = [platform[0].get_devices(device_type=cl.device_type.GPU)[0]]
+context = cl.Context(devices=my_gpu_devices)
+#context = cl.create_some_context()
 queue = cl.CommandQueue(context)
 
 # Create Opencl Buffers
@@ -70,13 +61,15 @@ buffer_c = cl.Buffer(context, cl.mem_flags.WRITE_ONLY, mat_c.nbytes)
 # Program
 start_time = time()
 
-row_A = np.int32(row_A_size)
-row_B = np.int32(row_B_size)
-row_C = np.int32(col_A_size)
+widthA = row_size
+widthA = np.int32(widthA)
+
+widthB = row_size
+widthB = np.int32(widthB)
 
 program = cl.Program(context, c_dot_product_kernel).build()
-program.dotProduct.set_scalar_arg_dtypes([np.int32, np.int32, None, None, None])
-err = program.dotProduct(queue, [row_A_size, col_A_size], None, row_A, row_C, buffer_a, buffer_b, buffer_c)
+program.dotProduct.set_scalar_arg_dtypes([np.int32, None, None, None])
+program.dotProduct(queue, [1024], [1024/16], widthA, buffer_a, buffer_b, buffer_c)
 
 queue.finish()
 
@@ -87,4 +80,3 @@ run_time = time()
 cl.enqueue_copy(queue, mat_c, buffer_c)
 
 print "RESULT: {0}s".format(run_time-start_time)
-print np.reshape(mat_c, (row_A_size, col_B_size))
