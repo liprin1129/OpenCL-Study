@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		CB2696811FED23E00080A681 /* matrix_multiplication_divide.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = matrix_multiplication_divide.py; path = ../matrix_multiplication_divide.py; sourceTree = "<group>"; };
 		CB2696821FED23E00080A681 /* numpy_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = numpy_test.py; path = ../numpy_test.py; sourceTree = "<group>"; };
-		CB2696831FED23E00080A681 /* matrix_multiplication.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = matrix_multiplication.py; path = ../matrix_multiplication.py; sourceTree = "<group>"; };
-		CB2696841FED2B0F0080A681 /* matrix_dot.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = matrix_dot.py; path = ../matrix_dot.py; sourceTree = "<group>"; };
+		CB67BAE020092412006475FB /* matrix_multiplication_v1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = matrix_multiplication_v1.py; path = ../matrix_multiplication_v1.py; sourceTree = "<group>"; };
+		CB67BAE120092412006475FB /* matrix_multiplication_v2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = matrix_multiplication_v2.py; path = ../matrix_multiplication_v2.py; sourceTree = "<group>"; };
+		CB67BAE220092412006475FB /* matrix_multiplication_v3.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = matrix_multiplication_v3.py; path = ../matrix_multiplication_v3.py; sourceTree = "<group>"; };
+		CB7C42E2200929FD00305973 /* matmul.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = matmul.py; sourceTree = "<group>"; };
+		CB7C42E320092B7900305973 /* helper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = helper.py; sourceTree = "<group>"; };
+		CB7C42E420092DE000305973 /* C_row.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; path = C_row.cl; sourceTree = "<group>"; };
+		CB7C42E520092DE000305973 /* C_block_form.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; path = C_block_form.cl; sourceTree = "<group>"; };
+		CB7C42E620092DE000305973 /* C_elem.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; path = C_elem.cl; sourceTree = "<group>"; };
+		CB7C42E720092DE100305973 /* C_row_priv.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; path = C_row_priv.cl; sourceTree = "<group>"; };
+		CB7C42E820092DE100305973 /* C_row_priv_bloc.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; path = C_row_priv_bloc.cl; sourceTree = "<group>"; };
+		CB7C42E9200931DF00305973 /* matrix_multiplication_v4.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = matrix_multiplication_v4.py; path = ../matrix_multiplication_v4.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		CB26966C1FED21FE0080A681 = {
 			isa = PBXGroup;
 			children = (
-				CB2696811FED23E00080A681 /* matrix_multiplication_divide.py */,
-				CB2696831FED23E00080A681 /* matrix_multiplication.py */,
 				CB2696821FED23E00080A681 /* numpy_test.py */,
-				CB2696841FED2B0F0080A681 /* matrix_dot.py */,
+				CB67BAE020092412006475FB /* matrix_multiplication_v1.py */,
+				CB67BAE120092412006475FB /* matrix_multiplication_v2.py */,
+				CB67BAE220092412006475FB /* matrix_multiplication_v3.py */,
+				CB7C42E9200931DF00305973 /* matrix_multiplication_v4.py */,
+				CB7C42E2200929FD00305973 /* matmul.py */,
+				CB7C42E320092B7900305973 /* helper.py */,
+				CB7C42E520092DE000305973 /* C_block_form.cl */,
+				CB7C42E620092DE000305973 /* C_elem.cl */,
+				CB7C42E820092DE100305973 /* C_row_priv_bloc.cl */,
+				CB7C42E720092DE100305973 /* C_row_priv.cl */,
+				CB7C42E420092DE000305973 /* C_row.cl */,
 			);
 			sourceTree = "<group>";
 		};

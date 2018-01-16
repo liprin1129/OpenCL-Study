@@ -9,10 +9,14 @@ __kernel void dotProduct(
 const int N,
 __global float *A,
 __global float *B,
-__global float *C)
+__global float *C,
+__local float *Bwrk)
 {
     int j, k;
     int i = get_global_id(0);
+    int iloc =  get_local_id(0);
+    int nloc =  get_local_size(0);
+    
     float tmp;
     float Awrk[1024];
     
@@ -23,11 +27,20 @@ __global float *C)
             }
             
             for (j = 0; j < N; j++) {
+                barrier(CLK_LOCAL_MEM_FENCE);
+                for (k=iloc; k<N; k+=nloc) {
+                    Bwrk[k] = B[k* N+j];
+                }
+                
+                barrier(CLK_LOCAL_MEM_FENCE);
+                
                 tmp = 0.0f;
                 for (k = 0; k < N; k++) {
-                    tmp += Awrk[k] * B[k*N+j];
+                    tmp += Awrk[k] * Bwrk[k];
                 }
             C[i*N+j] = tmp;
+            
+            barrier(CLK_LOCAL_MEM_FENCE);
             }
         }
     }
@@ -67,11 +80,13 @@ buffer_c = cl.Buffer(context, cl.mem_flags.WRITE_ONLY, mat_c.nbytes)
 
 # Program
 program = cl.Program(context, c_dot_product_kernel).build()
-program.dotProduct.set_scalar_arg_dtypes([np.int32, None, None, None])
+program.dotProduct.set_scalar_arg_dtypes([np.int32, None, None, None, None])
 
 start_time = time()
 
-program.dotProduct(queue, [1024], [1024/16], widthA, buffer_a, buffer_b, buffer_c)
+local_memory = cl.LocalMemory(np.dtype(np.float32).itemsize * 1024)
+
+program.dotProduct(queue, (1024,), (1024/16,), widthA, buffer_a, buffer_b, buffer_c, local_memory)
 
 queue.finish()
 

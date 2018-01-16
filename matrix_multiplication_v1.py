@@ -11,17 +11,19 @@ __kernel void dotProduct(
     __global float* inputA,
     __global float* inputB,
     __global float* outputC) {
-        int row = get_global_id(1);
-        int col = get_global_id(0);
+        int row = get_global_id(0);
+        int col = get_global_id(1);
 
         double sum=0.0f;
         
-        for (int p = 0; p < 100; p++) {
-        for (int i = 0; i < widthA; i++) {
-            sum += inputA[row * widthA + i] * inputB[i * widthB + col];
+        if ((row < widthA) && (col < widthB)) {
+            for (int p = 0; p < 100; p++) {
+                for (int i = 0; i < widthA; i++) {
+                    sum += inputA[row * widthA + i] * inputB[i * widthB + col];
+                }
+            }
+            outputC[row * widthB + col] = sum;
         }
-        }
-        outputC[row * widthB + col] = sum;
     }
 '''
 
@@ -40,7 +42,10 @@ mat_c = mat_c.astype(np.float32)
 # Set up OpenCL
 # #############
 platform = cl.get_platforms()
-my_gpu_devices = [platform[0].get_devices(device_type=cl.device_type.GPU)[0]]
+my_gpu_devices = [platform[0].get_devices(device_type=cl.device_type.GPU)[1]]
+#my_gpu_devices = platform[0].get_devices(device_type=cl.device_type.GPU)
+#print my_gpu_devices
+
 context = cl.Context(devices=my_gpu_devices)
 #context = cl.create_some_context()
 queue = cl.CommandQueue(context)
