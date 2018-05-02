@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB39DF532081C8B60089F1F8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB39DF522081C8B60089F1F8 /* main.cpp */; };
+		CB8FCB362084ED3B00544452 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8FCB352084ED3A00544452 /* Accelerate.framework */; };
+		CB8FCB372084EF3400544452 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB39DF5A2081C9090089F1F8 /* OpenCL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB39DF4D2081C8B60089F1F8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB39DF4F2081C8B60089F1F8 /* OpenCLWithC++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenCLWithC++"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB39DF522081C8B60089F1F8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CB39DF5A2081C9090089F1F8 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		CB46740F2085DE3A008C3A77 /* libcblas.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcblas.tbd; path = usr/lib/libcblas.tbd; sourceTree = SDKROOT; };
+		CB8FCB322084E80F00544452 /* vectorAdd.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = vectorAdd.cl; sourceTree = "<group>"; };
+		CB8FCB352084ED3A00544452 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB39DF4C2081C8B60089F1F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8FCB372084EF3400544452 /* OpenCL.framework in Frameworks */,
+				CB8FCB362084ED3B00544452 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB39DF462081C8B60089F1F8 = {
+			isa = PBXGroup;
+			children = (
+				CB39DF512081C8B60089F1F8 /* OpenCLWithC++ */,
+				CB39DF502081C8B60089F1F8 /* Products */,
+				CB39DF592081C9090089F1F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB39DF502081C8B60089F1F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB39DF4F2081C8B60089F1F8 /* OpenCLWithC++ */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB39DF512081C8B60089F1F8 /* OpenCLWithC++ */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FCB2F2084E7CD00544452 /* Kernel */,
+				CB39DF522081C8B60089F1F8 /* main.cpp */,
+			);
+			path = "OpenCLWithC++";
+			sourceTree = "<group>";
+		};
+		CB39DF592081C9090089F1F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB46740F2085DE3A008C3A77 /* libcblas.tbd */,
+				CB8FCB352084ED3A00544452 /* Accelerate.framework */,
+				CB39DF5A2081C9090089F1F8 /* OpenCL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8FCB2F2084E7CD00544452 /* Kernel */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FCB322084E80F00544452 /* vectorAdd.cl */,
+			);
+			path = Kernel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB39DF4E2081C8B60089F1F8 /* OpenCLWithC++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB39DF562081C8B60089F1F8 /* Build configuration list for PBXNativeTarget "OpenCLWithC++" */;
+			buildPhases = (
+				CB39DF4B2081C8B60089F1F8 /* Sources */,
+				CB39DF4C2081C8B60089F1F8 /* Frameworks */,
+				CB39DF4D2081C8B60089F1F8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCLWithC++";
+			productName = "OpenCLWithC++";
+			productReference = CB39DF4F2081C8B60089F1F8 /* OpenCLWithC++ */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB39DF472081C8B60089F1F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "SeongMuk Gang";
+				TargetAttributes = {
+					CB39DF4E2081C8B60089F1F8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CB39DF4A2081C8B60089F1F8 /* Build configuration list for PBXProject "OpenCLWithC++" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB39DF462081C8B60089F1F8;
+			productRefGroup = CB39DF502081C8B60089F1F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB39DF4E2081C8B60089F1F8 /* OpenCLWithC++ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB39DF4B2081C8B60089F1F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB39DF532081C8B60089F1F8 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB39DF542081C8B60089F1F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CB39DF552081C8B60089F1F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB39DF572081C8B60089F1F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/pure/Private_Local_Data/Study/OpenCL/OpenCL-Study/Include/",
+					/usr/local/Cellar/clblas/2.12/include/,
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				OPENCL_DENORMS_ARE_ZERO = NO;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB39DF582081C8B60089F1F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/pure/Private_Local_Data/Study/OpenCL/OpenCL-Study/Include/",
+					/usr/local/Cellar/clblas/2.12/include/,
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				OPENCL_DENORMS_ARE_ZERO = NO;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB39DF4A2081C8B60089F1F8 /* Build configuration list for PBXProject "OpenCLWithC++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB39DF542081C8B60089F1F8 /* Debug */,
+				CB39DF552081C8B60089F1F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB39DF562081C8B60089F1F8 /* Build configuration list for PBXNativeTarget "OpenCLWithC++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB39DF572081C8B60089F1F8 /* Debug */,
+				CB39DF582081C8B60089F1F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB39DF472081C8B60089F1F8 /* Project object */;
+}
